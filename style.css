@@ -1,4 +1,225 @@
-h1
+
+body
 {
-	color: red;
+    font-family: 'Raleway' sans-serif;
 }
+
+header , main {
+    width: 98%;
+    max-width: 100%;
+    margin: auto;
+}
+/*////////////////Header//////////////////*/
+
+#entête
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo
+{
+    margin-left: 5%;
+    margin-top: 25px;
+    display: block;
+}
+
+img
+{
+   max-width: 70%;
+   height: auto;
+}
+
+.menu
+{
+    margin-right: 5%;
+    display: block;
+    margin-top: 0;
+}
+
+.menu-item
+{
+    display: inline-block;
+    text-align: center;
+    width: 170px;
+}
+.menu a 
+{
+    padding: 50px 2px 0 0;
+}
+
+a
+{
+    text-decoration: none;
+    font-family: 'Raleway';
+}
+
+a:visited
+{
+    color: transparent;
+}
+
+a:hover
+{
+    border-top: solid 3px #0065FC;
+    color: #0065FC;
+}
+
+
+a:focus
+{
+    border-top: solid 3px #0065FC;
+    color: #0065FC;
+}
+
+.logo a:hover
+{
+    border-top: none;
+}
+
+
+
+/*////////////Responsive////////////*/
+
+/*////////////Tablettes////////////*/
+
+@media screen and (min-width: 768px) and (max-width: 992px)
+{
+    #entête
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .logo
+    {
+        display: block;
+       align-items: center;
+    }
+  
+    .menu
+    {
+        width: auto;
+        font-size: 35px;
+        
+    }
+
+
+    .menu-item
+    {
+        width: 350px;
+        justify-content: space-between;
+    }
+
+    a:visited
+    {
+        color: transparent;
+    }
+
+    
+
+    a:hover
+    {
+        border-bottom: solid 4px #0065FC;
+        border-top: none;
+        color: #0065FC;
+        padding-bottom: 18px;
+    }
+
+
+    a:focus
+    {
+        border-bottom: solid 4px #0065FC;
+        color: #0065FC;
+        padding-bottom: 18px;
+        border-top: none;
+    }
+
+    
+
+    .logo a:hover
+    {
+        border-bottom: none;
+    }
+
+}
+
+
+
+
+
+/*////////////Smartphone//////////*/
+
+@media screen and (min-width: 375px) and (max-width: 768px)
+{
+    #entête
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+   
+    .logo
+    {
+        margin-left: 15%;
+    }   
+
+    .menu
+    {
+        width: auto;
+        font-size: 25px;
+        
+    }
+
+
+    .menu-item
+    {
+        width: 200px;
+        justify-content: space-between;
+    }
+
+    
+    a:visited
+    {
+        color: transparent;
+    }
+
+    
+
+    a:hover
+    {
+        border-bottom: solid 4px #0065FC;
+        border-top: none;
+        color: #0065FC;
+        padding-bottom: 18px;
+    }
+
+
+    a:focus
+    {
+        border-bottom: solid 4px #0065FC;
+        color: #0065FC;
+        padding-bottom: 18px;
+        border-top: none;
+    }
+
+    
+
+    .logo a:hover
+    {
+        border-bottom: none;
+    }
+
+
+
+
+
+
+
+
+
+
